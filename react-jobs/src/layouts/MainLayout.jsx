@@ -8,7 +8,7 @@ const MainLayout = () => {
     <>
     <NavBar/>
     <Outlet/>
-    <ToastContainer/>
+    <ToastContainer autoClose={1000}/>
     </>
   )
 }

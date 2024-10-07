@@ -83,6 +83,20 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "id": "0b3c",
+      "title": "Chat GPT",
+      "type": "Full-Time",
+      "location": "Addis Ababa ",
+      "description": "Train Ai tools",
+      "salary": "$150K - 175K",
+      "company": {
+        "name": "Kuraz ",
+        "description": "software consulting firm",
+        "contactEmail": "tins@gns",
+        "contactPhone": "0916161004"
+      }
     }
   ]
 }

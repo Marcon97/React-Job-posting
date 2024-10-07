@@ -5,7 +5,6 @@ import  {FaMapMarker} from 'react-icons/fa'
 
 const JobListing = ({job}) => {
     const [showFullDescription, setshowFullDescription] = useState(false);
-
     let description = job.description;
 
     if(!showFullDescription){

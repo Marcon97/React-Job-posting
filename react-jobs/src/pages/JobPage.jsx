@@ -105,10 +105,16 @@ const JobPage = ({deleteJob}) => {
     </>
     )
 };
+// const jobLoader = async ( {params}) =>{
+//     const res = await fetch(`/api/jobs/${params.id}`);
+//     const data = await res.json();
+//     return data;
+// }
 const jobLoader = async ( {params}) =>{
-    const res = await fetch(`/api/jobs/${params.id}`);
-    const data = await res.json();
-    return data;
+  const rawJobs = localStorage.getItem("data");
+  let data = JSON.parse(rawJobs)
+  const job = data.jobs.filter(j => j.id === params.id)[0]
+  return job
 }
 
 export {JobPage as default, jobLoader} 
